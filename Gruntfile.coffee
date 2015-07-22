@@ -58,7 +58,11 @@ module.exports = (grunt) ->
     'grunt-prettify'
   ].forEach (npmTask) ->
     task = npmTask.replace /^grunt-(contrib-)?/, ''
+    # cas particulier
+    task = task.replace 'scss-lint', 'scsslint'
     grunt.registerTask task, [], () ->
+      # on renomme la tâche pour éviter les boucles infinies si le module n'est pas chargé
+      grunt.task.renameTask task, "#{task}-old"
       grunt.loadNpmTasks npmTask
       grunt.task.run task
 
