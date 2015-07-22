@@ -394,3 +394,27 @@ module.exports = (grunt) ->
     else
       grunt.log.write 'Updating third party lib with bower'
       grunt.task.run 'bower'
+
+
+  # PROXY
+  # ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+  #
+  grunt.registerTask 'nproxy', 'Start nproxy to proxy local JS and CSS files', () ->
+    nproxy = require('nproxy')
+    argv   = require('yargs').argv;
+
+    # Grunt should not finish the task
+    @async()
+
+    # This will serve static local files for JS & CSS intead of remote ones
+    # use: `localhost:8989` as proxy parameter
+
+    # see `nproxy-conf.js` for proxy configuration
+    port = 8989
+    options =
+      timeout : 100
+      debug   : false
+
+    options.responderListFilePath = require('./nproxy-conf.js')(argv)
+
+    nproxy port, options
