@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Shorcut for Docker
-# Usage: nuke.sh [TYPE] [PARAM]
+# Usage: docker-utils.sh [TYPE] [PARAM]
 #    TYPES
 #      - co : Actions on containers
 #      - im : Actions on images

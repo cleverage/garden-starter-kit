@@ -8,7 +8,7 @@ else
 endif
 
 USER_PROJECT_NAME=cleverage/
-DOCKER_FILES_DIRECTORY=./tools
+DOCKER_FILES_DIRECTORY=./docker
 
 # map user and group from host to container
 ifeq ($(PLATFORM), OSX)
