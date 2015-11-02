@@ -194,3 +194,27 @@ les utiliser, ou non, selon vos envies ou votre contexte projet.
 
 * [Bower](docs/bower.md)
 * [KSS](docs/kss.md)
+
+
+Erreurs
+--------------------------------------------------------------------------------
+Lors d'un watch il est possible d'avoir l'erreur `EMFILE: Too many opened files.`
+
+C'est lié à une limite des fichiers ouverts. Sur OSX cette limite est par défaut
+ à 256.
+
+Pour voir la limite :
+
+```bash
+$ launchctl limit maxfiles
+```
+
+Pour augmenter la limite :
+
+```bash
+$ sudo launchctl limit maxfiles 10480 10480
+```
+
+Redémarrer le terminal et ça sera ok.
+
+Pour plus de détail : [How do I fix the error EMFILE: Too many opened files ?](https://github.com/gruntjs/grunt-contrib-watch#how-do-i-fix-the-error-emfile-too-many-opened-files)
