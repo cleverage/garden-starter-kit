@@ -7,7 +7,8 @@ else
   PLATFORM := Linux
 endif
 
-USER_PROJECT_NAME=cleverage/
+#USER_PROJECT_NAME=cleverage/
+USER_PROJECT_NAME=
 DOCKER_FILES_DIRECTORY=./docker
 
 # map user and group from host to container
@@ -27,8 +28,12 @@ else
   CREATE_USER_COMMAND = \
     addgroup -g $(GROUP_ID) $(CONTAINER_GROUPNAME) && \
     adduser -u $(USER_ID) -h $(HOMEDIR) -G $(CONTAINER_GROUPNAME) $(CONTAINER_USERNAME) -D &&
+    # Uncomment on Ubuntu docker image.
+    #groupadd -f -g $(GROUP_ID) $(CONTAINER_GROUPNAME) && \
+    #useradd -u $(USER_ID) -g $(CONTAINER_GROUPNAME) $(CONTAINER_USERNAME) && \
+    #mkdir -p $(HOMEDIR) &&
   COMPOSER_CACHE_DIR = /var/tmp/composer
-	BOWER_CACHE_DIR = /var/tmp/bower
+  BOWER_CACHE_DIR = /var/tmp/bower
 endif
 
 # map SSH identity from host to container

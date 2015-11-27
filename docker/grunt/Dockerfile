@@ -2,7 +2,7 @@
 #
 # VERSION               0.1
 
-FROM cleverage/nodejs
+FROM nodejs
 MAINTAINER Jean-Yves Gastaud "jygastaud@gmail.com"
 
 ENV HOME /root
