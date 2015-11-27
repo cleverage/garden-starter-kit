@@ -42,7 +42,7 @@ $ make build-grunt
 ### L'image *bower*
 
 ```bash
-$ make build-js-tools
+$ make build-bower
 ```
 
 ## Utilisation
