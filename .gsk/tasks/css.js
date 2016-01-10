@@ -41,9 +41,9 @@ gulp.task('css', ['test:css'], function () {
   return gulp.src(SRC)
     .pipe(plumber({ errorHandler: err }))
     .pipe(pipeline())
-    .pipe(postcss([
-      autoprefixer(APX_CONF)
-    ]))
+    // .pipe(postcss([
+    //   autoprefixer(APX_CONF)
+    // ]))
     .pipe(gulp.dest(DEST))
     .pipe(bs.stream());
 });
