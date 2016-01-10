@@ -14,7 +14,8 @@ var SASS = {
   config_file: './config.rb',
   environment: ENV.all.optimize ? 'production' : 'development',
   sass       : ENV.css['src-dir'],
-  css        : ENV.css['dest-dir']
+  css        : ENV.css['dest-dir'],
+  relative   : false
 };
 
 module.exports = function () {
