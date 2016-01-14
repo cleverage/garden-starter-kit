@@ -3,6 +3,16 @@ module.exports = (grunt) ->
     require('time-grunt')(grunt)
   catch error
     grunt.log.debug "time-grunt not installed"
+
+  try
+    require('jit-grunt')(grunt,
+      usebanner: 'grunt-banner'
+      scsslint: 'grunt-scss-lint'
+      useminPrepare: 'grunt-usemin'
+    )
+  catch error
+    grunt.log.debug "jit-grunt not installed"
+
   semver = require 'semver'
   pkg = grunt.file.readJSON 'package.json'
 
@@ -52,45 +62,6 @@ module.exports = (grunt) ->
   # Generation du style guide basé sur les commentaires KSS des fichiers SCSS
   # Alias de grunt exec:kss
   grunt.registerTask 'kss', ['exec:kss']
-
-
-  # CHARGE LES TÂCHES A LA DEMANDE POUR ACCELERER
-  # L'EXECUTION DES TâCHES APPELLÉES INDIVIDUELLEMENT
-  # ============================================================================
-  [
-    'grunt-assemble'
-    'grunt-contrib-clean'
-    'grunt-contrib-compass'
-    'grunt-contrib-concat'
-    'grunt-contrib-copy'
-    'grunt-contrib-imagemin'
-    'grunt-contrib-jshint'
-    'grunt-contrib-uglify'
-    'grunt-exec'
-    'grunt-newer'
-    'grunt-postcss'
-    'grunt-prettify'
-    'grunt-githooks'
-  ].forEach (npmTask) ->
-    task = npmTask.replace /^grunt-(contrib-)?/, ''
-    grunt.registerTask task, [], () ->
-      grunt.loadNpmTasks npmTask
-      grunt.task.run task
-
-  # taches qui doivent être distinguées via `task:distinction`...
-  # ... ou taches qui ne peuvent pas être optimisées de cette manière
-  [
-    'grunt-prompt'
-    'grunt-bump'
-    'grunt-usemin'
-    'grunt-exec'
-    'grunt-scss-lint'
-    'grunt-contrib-connect'
-    'grunt-contrib-watch'
-    'grunt-sftp-deploy'
-  ].forEach (npmTask) ->
-    grunt.loadNpmTasks npmTask
-
 
 
   # CONFIGURATION DES TÂCHES CHARGÉES
