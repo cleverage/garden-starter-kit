@@ -26,6 +26,7 @@
     "grunt-scss-lint": "~0.3.8",
     "grunt-usemin": "^3.0.0",
     "handlebars-helper-compose": "^0.2.12",
+    "jit-grunt": "^0.9.1",
     "kss": "^2.3.3",
     "semver": "^5.1.0"
   },
