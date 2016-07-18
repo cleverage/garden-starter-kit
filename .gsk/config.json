@@ -7,7 +7,7 @@
   "css" : {
     "src-dir"     : "./src/css",
     "dest-dir"    : "./build/css",
-    "engine"      : "sass",
+    "engine"      : "eyeglass",
     "postcss"     : {
       "autoprefixer": {
         "browsers": ["> 4%", "ie >= 8"]
