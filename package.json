@@ -3,13 +3,8 @@
   "homepage": "https://github.com/cleverage/garden-starter-kit",
   "title": "Garden Starter Kit",
   "description": "Set de base pour les projets Garden statiques.",
-<<<<<<< 1661a7f19c0b25514052881da5b7442a3a94de39
   "version": "2.0.0-beta6",
   "license" : "MIT",
-=======
-  "version": "2.1.0",
-  "license": "MIT",
->>>>>>> sass-lint & eyeglass
   "repository": {
     "type": "git",
     "url": "https://github.com/cleverage/garden-starter-kit.git"
@@ -24,37 +19,25 @@
     "babel-preset-es2015": "6.22.0",
     "del": "2.2.2",
     "eyeglass": "^0.8.3",
+    "eyeglass-spriting-ajh": "^0.10.0-beta",
     "glob": "7.1.1",
     "gulp": "3.9.1",
     "gulp-compass": "2.1.0",
-<<<<<<< 1661a7f19c0b25514052881da5b7442a3a94de39
     "gulp-concat": "2.6.1",
     "gulp-if": "2.0.2",
     "gulp-imagemin": "3.1.1",
     "gulp-less": "3.3.0",
     "gulp-plumber": "1.1.0",
     "gulp-postcss": "6.3.0",
+    "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "2.4.1",
     "gulp-stylus": "2.6.0",
     "gulp-svgstore": "6.1.0",
     "gulp-uglify": "2.0.1",
     "gulp-util": "3.0.8",
     "jquery": "3.1.1",
-=======
-    "gulp-concat": "2.6.0",
-    "gulp-if": "2.0.0",
-    "gulp-imagemin": "2.3.0",
-    "gulp-less": "3.0.3",
-    "gulp-plumber": "1.0.1",
-    "gulp-postcss": "6.0.1",
-    "gulp-sass": "^2.3.2",
-    "gulp-sourcemaps": "1.6.0",
-    "gulp-stylus": "2.1.0",
-    "gulp-uglify": "1.4.2",
-    "gulp-util": "3.0.6",
-    "jquery": "3.0.0",
->>>>>>> sass-lint & eyeglass
     "lazypipe": "1.0.1",
+    "node-sass": "^3.8.0",
     "merge-stream": "1.0.1",
     "require-dir": "0.3.1",
     "run-sequence": "1.2.2",
@@ -75,49 +58,29 @@
     "gulp-hb": "5.1.4",
     "gulp-hbs": "0.2.0",
     "gulp-help": "1.6.1",
-<<<<<<< 1661a7f19c0b25514052881da5b7442a3a94de39
     "gulp-jscs": "4.0.0",
     "gulp-jshint": "2.0.4",
     "gulp-lesshint": "2.1.0",
-=======
-    "gulp-inject": "4.1.0",
-    "gulp-jscs": "3.0.2",
-    "gulp-jshint": "2.0.0",
-    "gulp-lesshint": "1.0.0",
->>>>>>> sass-lint & eyeglass
     "gulp-markdown": "1.2.0",
     "gulp-newer": "1.3.0",
     "gulp-prompt": "0.2.0",
     "gulp-rename": "1.2.2",
-<<<<<<< 1661a7f19c0b25514052881da5b7442a3a94de39
+    "gulp-sass-lint": "^1.2.0",
     "gulp-scss-lint": "0.4.0",
     "gulp-sftp": "0.1.5",
     "gulp-stylint": "4.0.0",
+    "gulp-svgstore": "6.0.0",
     "gulp-twig": "0.7.0",
     "highlight.js": "9.9.0",
     "jshint": "2.9.4",
     "jshint-stylish": "2.2.1",
     "kss": "3.0.0-beta.18",
-    "nproxy": "stephane-tessier/nproxy#1.7.1"
+    "nproxy": "stephane-tessier/nproxy#1.7.1",
+    "sass-lint": "^1.8.2"
   },
   "scripts": {
     "install": "bundle install --path .gems"
-=======
-    "gulp-sass-lint": "^1.2.0",
-    "gulp-scss-lint": "0.3.6",
-    "gulp-sftp": "0.1.5",
-    "gulp-stylint": "3.0.0",
-    "gulp-svgstore": "6.0.0",
-    "gulp-twig": "0.4.0",
-    "highlight.js": "8.9.1",
-    "jshint": "2.9.1",
-    "jshint-stylish": "2.0.1",
-    "kss": "2.1.1",
-    "nproxy": "stephane-tessier/nproxy#1.7.0",
-    "sass-lint": "^1.8.2"
->>>>>>> sass-lint & eyeglass
   },
-  "scripts": {},
   "engines": {
     "node": ">= 5.0.3",
     "npm": ">= 3.5.4"

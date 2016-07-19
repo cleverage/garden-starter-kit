@@ -15,7 +15,9 @@ var LINT = {
 
 module.exports = function () {
   var lazystream = lazypipe()
-    .pipe(sasslint, LINT);
+    .pipe(sasslint, LINT)
+    .pipe(sasslint.format)
+    .pipe(sasslint.failOnError);
 
   return lazystream();
 };
