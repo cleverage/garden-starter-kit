@@ -64,8 +64,21 @@ npm install eyeglass-moduleName --save
 
 And import the module in your scss:
 ```scss
-@import 'spriting';
+@import 'moduleName';
 ```
 
+
+Normalize exemple
+-------------------------------------------------------------------------------
+
+Install it as dependency with npm:
+```bash
+npm install normalize-scss --save
+```
+
+And import the module in your scss:
+```scss
+@import 'normalize/import-now';
+```
 
 
