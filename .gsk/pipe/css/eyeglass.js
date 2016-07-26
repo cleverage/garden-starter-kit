@@ -7,7 +7,6 @@ var lazypipe = require('lazypipe');
 var sass = require('gulp-sass');
 var eyeglass = require('eyeglass');
 var ENV = require('../../tools/env');
-var assetsDir = ENV.assets['src-dir'];
 
 // SASS CONFIGURATION
 // ----------------------------------------------------------------------------
@@ -17,12 +16,12 @@ var SASS = {
   eyeglass: {
     // where assets are installed by eyeglass to expose them according to their output url.
     // If not provided, assets are not installed unless you provide a custom installer.
-    buildDir: assetsDir,
+    buildDir: ENV.assets['dest-dir'],
 
     assets: {
       relativeTo: '../../../',
       sources: [
-        { directory: assetsDir }
+        { directory: ENV.assets['src-dir'] }
       ]
     }
   }

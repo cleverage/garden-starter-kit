@@ -29,7 +29,7 @@
     "gulp-less": "3.3.0",
     "gulp-plumber": "1.1.0",
     "gulp-postcss": "6.3.0",
-    "gulp-sass": "^2.3.2",
+    "gulp-sass": "2.3.2",
     "gulp-sourcemaps": "2.4.1",
     "gulp-stylus": "2.6.0",
     "gulp-svgstore": "6.1.0",
@@ -65,7 +65,7 @@
     "gulp-newer": "1.3.0",
     "gulp-prompt": "0.2.0",
     "gulp-rename": "1.2.2",
-    "gulp-sass-lint": "^1.2.0",
+    "gulp-sass-lint": "1.2.0",
     "gulp-scss-lint": "0.4.0",
     "gulp-sftp": "0.1.5",
     "gulp-stylint": "4.0.0",
@@ -76,7 +76,7 @@
     "jshint-stylish": "2.2.1",
     "kss": "3.0.0-beta.18",
     "nproxy": "stephane-tessier/nproxy#1.7.1",
-    "sass-lint": "^1.8.2"
+    "sass-lint": "1.8.2"
   },
   "scripts": {
     "install": "bundle install --path .gems"
