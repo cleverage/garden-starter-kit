@@ -18,7 +18,7 @@ Créer un nouveau projet
 Pour créer un nouveau projet, suivez simplement les instructions ci-après.
 
 > **NOTE :** _Il s'agit ici des instructions manuelles à suivre. Cependant, à terme,
-  il est prévu q u'un script d'installation soit disponible pour simplifier le démarage._
+  il est prévu qu'un script d'installation soit disponible pour simplifier le démarage._
 
 > **NOTE :** _Vous pouvez maintenant utiliser Docker, la documentation est disponible dans [.gsk/docs/docker.md](.gsk/docs/docker.md)._
 
