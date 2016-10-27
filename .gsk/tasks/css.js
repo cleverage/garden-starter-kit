@@ -13,7 +13,7 @@ var _            = require('underscore');
 
 // On ne va compiler que les fichiers dont le nom ne commence pas par un _
 var SRC  = [
-  path.join(ENV['src-dir'],       '**', '*'),
+  path.join(ENV['src-dir'],       '**', '*.*'),
   path.join('!' + ENV['src-dir'], '**', '_*'),
   path.join('!' + ENV['src-dir'], '**', '*.md')
 ];
