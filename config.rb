@@ -1,6 +1,12 @@
 # Nombre de décimal après la virgule, utile pour la précision des em
 Sass::Script::Number.precision = 8
 
+# Add node_modules directory as path to resolve import
+additional_import_paths = ['node_modules']
+
+# Load compass plugin by gems :
+# require 'sass-globbing'
+
 # Configuration des chemins des ressources:
 sass_dir        = './src/css'
 images_dir      = './src/assets/img'

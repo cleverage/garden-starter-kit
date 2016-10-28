@@ -77,3 +77,28 @@ Ou bien en standalone
 ```bash
 $ bundle exec compass compile -e production
 ```
+
+
+Configuration avancée
+-------------------------------------------------------------------------------
+
+### Installer un module via NPM (à préférer autant que possible)
+
+Exemple avec sass-mq:
+
+Installer le module NPM `npm install sass-mq --save`
+
+Puis importez le modules dans vos scss `@import 'sass-mq/mq';`.
+
+### Installer un module via bundler
+
+Exemple avec Sass-globing :
+
+Ajouter cette ligne au fichier Gemfile `gem 'sass-globbing'`
+
+Lancer un `bundle install` en ligne de comande pour que ce nouveau module soit bien installé.
+
+Puis ajouter la ligne suivante `require 'sass-globbing'` dans le fichier `config.rb`.
+
+Si votre gem expose des mixins vous devez l’importer dans votre css comme dans cet exemple avec bourbon `@import 'bourbon';`.
+
