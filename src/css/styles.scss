@@ -3,27 +3,26 @@
 // --------------------------
 
 /// Générez un guide des styles
- //
- // Si vous commentez votre code en utilisant la syntaxe
- // [KSS](https://github.com/kss-node/kss/blob/spec/SPEC.md),
- // le Starter Kit generera un guide des styles dans la
- // documentation a chaque build du projet.
- //
- // Styleguide Introduction
-
+//
+// Si vous commentez votre code en utilisant la syntaxe
+// [KSS](https://github.com/kss-node/kss/blob/spec/SPEC.md),
+// le Starter Kit generera un guide des styles dans la
+// documentation a chaque build du projet.
+//
+// Styleguide Introduction
 
 /// Une palette de couleur
- //
- // Si vous voulez documenter des couleurs, vous pouvez
- // le faire de cette manière grace au block Colors.
- //
- // Colors:
- // denim          : #1e5bc6
- // flamingo       : #f15145
- // alert          : #f33121 - red for error
- // $color-black   : #000    - real black
- //
- // Styleguide Introduction.Couleur
+//
+// Si vous voulez documenter des couleurs, vous pouvez
+// le faire de cette manière grace au block Colors.
+//
+// Colors:
+// denim          : #1e5bc6
+// flamingo       : #f15145
+// alert          : #f33121 - red for error
+// $color-black   : #000    - real black
+//
+// Styleguide Introduction.Couleur
 
 /// Font d’icon Fontello
  //
@@ -42,7 +41,6 @@
  //
  // Styleguide Introduction.Icons
 
-
 /// Exemple UI
  //
  // Markup: ../html/partials/_exemple.twig
@@ -58,6 +56,9 @@
  //
  // Styleguide Introduction.Svg
 
+@import 'assets';
+
 body {
   font: 1em sans-serif;
+  background: asset-url('img/clever-age-logo.png') no-repeat top right;
 }

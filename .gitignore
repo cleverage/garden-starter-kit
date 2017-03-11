@@ -7,6 +7,7 @@
 # -----------------------------------------------------------------------------
 # Ignorer le cache de Sass
 .sass-cache
+.eyeglass_cache
 
 # Ignorer la configuration interne de Bunler
 .bundle
