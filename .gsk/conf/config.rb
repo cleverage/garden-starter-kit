@@ -2,11 +2,11 @@
 Sass::Script::Number.precision = 8
 
 # Configuration des chemins des ressources:
-sass_dir        = 'src/css'
-images_dir      = 'src/assets/img'
-javascripts_dir = 'src/js'
-fonts_dir       = 'src/assets/fonts'
-css_dir         = 'build/css'
+sass_dir        = './src/css'
+images_dir      = './src/assets/img'
+javascripts_dir = './src/js'
+fonts_dir       = './src/assets/fonts'
+css_dir         = './build/css'
 
 # Configuration des chemins HTTP
 http_path             = ''
