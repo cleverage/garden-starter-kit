@@ -30,8 +30,8 @@ Sans Docker ce projet nécessite que votre environnement dispose de tous les out
 * [Rubygems](http://rubygems.org/)
 * [Bundler](http://bundler.io/)
 
-> Pour **Mac** : _vous devez obligatoirement installer XCode et les outils en
-  ligne de commande qui l’accompagnent (ce qui installera automatiquement Ruby et Rubygems). Il est également recommandé d'installer et d'utiliser
+> Pour **Mac** : _vous devez obligatoirement installer XCode et ses outils en ligne de commande (XCode les installe automatiquement depuis la version 6.1. Vous pouvez vérifier qu'ils sont bien installés en suivant ces instructions: http://docwiki.embarcadero.com/RADStudio/Berlin/fr/Installation_des_outils_de_ligne_de_commande_Xcode_sur_un_Mac. Ruby et Rubygems seront installés automatiquement en même temps). 
+Il est également recommandé d'installer et d'utiliser
   [Homebrew](http://brew.sh/) pour installer tous les outils en ligne de
   commande dont vous pourriez avoir besoin._
 
