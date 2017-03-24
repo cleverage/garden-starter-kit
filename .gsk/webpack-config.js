@@ -10,12 +10,12 @@ const DEST = ENV.js['dest-dir'];
 var glob = require('glob');
 
 // Get collection of entries files from config.js
-let entries = {};
+let entries = [];
 
 let files = glob.sync(path.join(SRC, '*.js'));
 
 for (const file of files) {
-  entries[path.basename(file, '.js')] = file;
+  entries.push(file);
 }
 
 
