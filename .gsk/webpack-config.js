@@ -48,22 +48,22 @@ module.exports = {
   entry: entries,
   output: {
     path: DEST,
-    filename: '[name].js'
+    filename: '[name].js',
   },
   module: {
-    loaders: [{
+    rules: [{
       test: /(\.jsx|\.js)$/,
       exclude: /(node_modules)/,
-      loader: 'babel',
-      query: {
-        presets: ['es2015'],
-      }
+      use: 'babel-loader',
     }]
   },
   resolve: {
-    root: path.resolve('../src/js'),
-    extensions: ['', '.js']
+    modules: [
+      path.resolve('../src/js'),
+      "node_modules"
+    ],
+    extensions: ['.js'],
   },
   devtool: 'source-map',
-  plugins: webpackPlugins
+  plugins: webpackPlugins,
 };
