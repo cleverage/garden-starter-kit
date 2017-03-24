@@ -73,7 +73,20 @@
     "nproxy": "stephane-tessier/nproxy#1.7.1"
   },
   "scripts": {
-    "install": "bundle install --path .gems"
+    "install": "bundle install --path .gems",
+    "assets": "./node_modules/.bin/gulp assets",
+    "connect": "./node_modules/.bin/gulp connect",
+    "css": "./node_modules/.bin/gulp css",
+    "doc": "./node_modules/.bin/gulp doc",
+    "html": "./node_modules/.bin/gulp html",
+    "images": "./node_modules/.bin/gulp images",
+    "js": "./node_modules/.bin/gulp js",
+    "live": "./node_modules/.bin/gulp live",
+    "nproxy": "./node_modules/.bin/gulp nproxy",
+    "sftp-deploy": "./node_modules/.bin/gulp sftp-deploy",
+    "svg": "./node_modules/.bin/gulp svg",
+    "test": "./node_modules/.bin/gulp test",
+    "watch": "./node_modules/.bin/gulp watch"
   },
   "engines": {
     "node": ">= 5.0.3",
