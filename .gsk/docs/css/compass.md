@@ -2,14 +2,14 @@
 Sass & Compass
 ===============================================================================
 
-Pour tous nos projets, nous utilisons [Sass](http://sass-lang.com) et
-[Compass](http://compass-style.org) par défaut.
+Nous utilisions [Sass](http://sass-lang.com) et
+[Compass](http://compass-style.org) dans de nombreux projets historique.
 
 Configuration:
 ```json
 {
   "css": {
-    "engine": "sass",
+    "engine": "compass",
   }
 }
 ```
@@ -17,28 +17,29 @@ Configuration:
 Vérifier votre environnement
 -------------------------------------------------------------------------------
 
-Sass repose sur [Ruby](https://www.ruby-lang.org/fr/), assurez-vous que vous
-l'avez bien installé sur votre environnement.
+Sass et compass reposent sur [Ruby](https://www.ruby-lang.org/fr/), assurez-vous que vous l'avez bien installé sur votre environnement.
 
 Il est également nécessaire d'installer l'utilitaire
 [Bundler](http://bundler.io/) dans votre environnement global (cela permet
 d'avoir plusieurs versions de Sass en fonction de chaque projets).
 
-Si ce n'est pas déjà le cas, exécutez simplement la commande suivante :
+Puis exécutez simplement la commande suivante :
 
 ```bash
 $ sudo gem install bundler
 ```
 
+Copiers à la racine du projet les fichiers `config.rb` et `Gemfile` que vous trouverez dans le dossier `.gsk/conf`.
+
 Puis, pour être sûr que vous disposer de la dernière version de Sass et Compass
-pour le projet sur lequel vous travaillez, exécutez la commande suivante :
+pour le projet sur lequel vous travaillez, exécutez la commande suivante :
 
 ```bash
 $ bundle install --path .gems
 ```
 
 En cas de problème de compilation Sass sur un projet existant commencez
-toujours par exécuter la commande suivante:
+toujours par exécuter la commande suivante :
 
 ```bash
 $ bundle update
