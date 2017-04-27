@@ -41,6 +41,11 @@ $ npm i jquery,underscore,moment --save
 Pour les utiliser, vous pouvez soit utiliser la fonction `require` des modules
 CommonJS, soit la syntax `import` des modules ES2015.
 
+#### solution bis : via bower
+
+Bower est le gestionnaire de dépendance front là où npm concerne beaucoup les projets back end via node. Pour installer une dépendance bower, utilisez la commande `bower install package --save`.
+Par défaut la librairie téléchargée se situera dans le dossier `build/vendor`
+
 ### Babel et ES2015
 
 Par defaut, webpack utilise [Babel](http://babeljs.io/) pour transpiler en
