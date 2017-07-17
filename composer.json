@@ -1,0 +1,8 @@
+{
+  "name": "garden-starterkit",
+  "homepage": "https://github.com/cleverage/garden-starter-kit",
+  "title": "Garden Starter Kit",
+  "description": "Basic set for Static integration projects.",
+  "version": "2.0.0-beta9",
+  "license": "MIT"
+}
