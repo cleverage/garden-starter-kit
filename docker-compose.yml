@@ -1,0 +1,10 @@
+version: '2'
+services:
+    gsk:
+        image: cleverage/garden-starter-kit
+        volumes:
+            - "./:/usr/src/app"
+        ports:
+            - "8000:8000"
+            - "3001:3001"
+        command: ['bash', '-c', 'npm install && npm start']

@@ -10,13 +10,11 @@ Merci de suivre les instructions sur [le site officiel](https://www.docker.com/p
 Création de l’image en locale
 -------------------------------------------------------------------------------
 
-> **NOTE :** _À terme,
-  il est prévu que l’image soit disponible sur le Docker hub._
+> **NOTE :**  _l’image étant disponible sur le Docker hub, cette étape n’est pas necéssaire à part si vous voulez votre propre image liée à votre projet._
 
 ```bash
 docker build -t cleverage/garden-starter-kit .
 ```
-
 
 Simplement avoir un aperçu de G.S.K. :
 -------------------------------------------------------------------------------
@@ -24,70 +22,54 @@ Simplement avoir un aperçu de G.S.K. :
 Vous pouvez avoir un aperçu de G.S.K. avec la commande suivante :
 
 ```bash
-$ docker run -it --rm -p 8000:8000 cleverage/garden-starter-kit
+$ docker-compose up
 ```
 
 Il vous suffit ensuite de vous rendre sur http://localhost:8000
 
+Puis pour tout arreter :
+```bash
+$ docker-compose down
+```
+
 Utilisation sur votre projet :
 -------------------------------------------------------------------------------
 
-Récupérer le G.S.K. :
+Créer et démarrer le conteneur :
 
 ```bash
-$ cd ~/monProjet
-$ git clone git@github.com:cleverage/garden-starter-kit.git .
-$ rm -rf .git
+$ docker-compose up
 ```
 
-### Methode 1 : Avec un conteneur actif en permanence :
-
-Créer et démarrer un nouveau conteneur :
+Ou avec l’option `-d` pour qu’il tourne en tâche de fond :
 
 ```bash
-$ docker run -d --name myProject -v "$PWD":/usr/src/app -p 8000:8000 -p 3001:3001 cleverage/garden-starter-kit tail -f /dev/null
+$ docker-compose up -d
 ```
 
-Ou alors pour travailler ensuite directement dans le container :
+À sa création le conteneur Docker lance un `npm install` puis un `gulp build` et un `gulp connect`
+
+Vous pouvez ensuite lancer d’autres commandes comme ceci :
 
 ```bash
-$ docker run -it --name myProject -v "$PWD":/usr/src/app -p 8000:8000 -p 3001:3001 cleverage/garden-starter-kit bash
+$ docker-compose exec gsk [ma commande]
 ```
 
-Vous pouvez ensuite lancer vos commandes avec `docker exec -it myProject [my command]`, par exemple :
+Exemples :
 
 ```bash
-$ docker exec -it myProject npm install
-$ docker exec -it myProject bundle install
-$ docker exec -it myProject gulp live
-$ docker exec -it myProject bash
+$ docker-compose exec gsk gulp watch
+$ docker-compose exec gsk gulp html
 ```
 
-Pour arreter et redémarrer le conteneur :
+Où travailler directement dans le conteneur :
 
 ```bash
-docker stop myProject
-docker start myProject
+$ docker-compose exec gsk bash
 ```
 
 Pour supprimer le conteneur :
 
 ```bash
-docker down myProject
-```
-
-### Methode 2 : Sans conteneur actif en permanence :
-
-Pour lancer vos commandes :
-
-```bash
-$ docker run -ti --rm -v "$PWD":/usr/src/app [-p 8000:8000 -p 3001:3001] cleverage/garden-starter-kit [my command]
-```
-
-Par exemple :
-
-```bash
-$ docker run -ti --rm -v "$PWD":/usr/src/app cleverage/garden-starter-kit npm install
-$ docker run -ti --rm -v "$PWD":/usr/src/app cleverage/garden-starter-kit bundle install
-$ docker run -ti --rm -v "$PWD":/usr/src/app -p 8000:8000 -p 3001:3001 cleverage/garden-starter-kit gulp live
+docker-compose down
 ```

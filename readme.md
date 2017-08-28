@@ -17,7 +17,7 @@ Créer un nouveau projet
 -------------------------------------------------------------------------------
 Pour créer un nouveau projet, suivez simplement les instructions ci-après.
 
-> **NOTE :** _Il s'agit ici des instructions manuelles à suivre. Cependant, à terme,
+> **NOTE :** _Il s’agit ici des instructions manuelles à suivre. Cependant, à terme,
   il est prévu qu'un script d'installation soit disponible pour simplifier le démarage._
 
 ## Initialisez votre projet
@@ -38,7 +38,7 @@ $ rm -rf .git
 ```
 
 Il ne vous reste plus qu’à initialiser le dépôt git de votre projet et commiter
-le _starter kit_ que vous avez récupéré pour commencer votre projet :
+le _starter kit_ que vous avez récupéré pour commencer votre projet :
 
 ```bash
 $ git init
@@ -85,7 +85,7 @@ Une fois les étapes précédantes executées, vous n’êtes déjà plus sur le
   "homepage": "https://github.com/cleverage/garden-starter-kit",
   "title": "Garden Starter Kit",
   "description": "Set de base pour les projets Garden statiques.",
-  "version": "2.0.0-beta9",
+  "version": "2.0.0",
   "license" : "MIT",
   "repository": {
     "type": "git",

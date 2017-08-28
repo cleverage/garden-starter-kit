@@ -13,15 +13,17 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
-COPY . /usr/src/app
 
-RUN npm install
-# Run bundle command only if there is a gemfile available
-RUN if [ -f "Gemfile" ]; then bundle install; fi
+# Add an gsk user because bower doesn’t like being root
+RUN adduser --disabled-password --gecos "" gsk && \
+  echo "gsk ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
-# Add node_modules
-ENV PATH "$PATH:/usr/src/app/node_modules/.bin"
+RUN chown -R gsk:gsk /usr/src/app
+
+USER gsk
+
+ENV PATH ./node_modules/.bin:$PATH
 
 EXPOSE 8000 3001
 
-CMD ["gulp", "live"]
+CMD ["npm", "install"]
