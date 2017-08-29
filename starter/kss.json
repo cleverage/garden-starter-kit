@@ -1,0 +1,14 @@
+{
+  "source": "./src/css",
+  "homepage": "styleguide.md",
+  "destination": "./build/doc/styleguide",
+  "builder": "./node_modules/garden-starterkit/kss",
+  "custom": [
+    "Colors",
+    "Icons"
+  ],
+  "css": [
+    "../../css/doc.css",
+    "../../css/styles.css"
+  ]
+}

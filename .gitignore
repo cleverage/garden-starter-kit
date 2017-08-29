@@ -3,19 +3,6 @@
 # Pour être sur que le fichier .gitignore n'est jamais ignorer lui-même.
 !.gitignore
 
-# SASS
-# -----------------------------------------------------------------------------
-# Ignorer le cache de Sass/Compass
-.sass-cache
-
-# Ignorer la configuration interne de Bunler
-.bundle
-
-# Ignorer les gems instalées avec le projet
-# N'hésitez pas à adpater le nom du dossier à vos propre habitudes
-.gems
-
-
 # MODULES TIERS
 # -----------------------------------------------------------------------------
 # Ignorer les modules et logs nodes
@@ -23,28 +10,3 @@ node_modules
 logs
 *.log
 npm-debug.log*
-
-# Ignorer les biblothèques et fichiers temporaires gérés via JSPM
-jspm_packages
-
-# Ignorer le cache nproxy
-nproxy-cache
-# Ignorer la conf du serveur mandataire dans nproxy
-# .gsk/conf/nproxy-auth.json
-
-# Ignorer les identifiants du serveur sftp
-.ftppass
-
-# PROJET
-# -----------------------------------------------------------------------------
-# Ignorer les bibliothèques JS tiers placées dans les sources
-# src/js/lib
-
-# Ignorer les bibliothèques Sass tiers placées dans les sources
-# src/sass/lib
-
-# Ignorer le build
-build
-
-# Ignorer le fichier contenant tous les symbols svg regroupés
-src/assets/svg/symbols.svg

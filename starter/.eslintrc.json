@@ -1,7 +1,7 @@
 {
   "env": {
     "node": true,
-    "browser": false,
+    "browser": true,
     "es6": true
   },
   "extends": "eslint:recommended",
@@ -13,13 +13,11 @@
     "sourceType" : "module"
   },
   "globals": {
-    "console": true
   },
   "plugins": [
   ],
   "rules": {
-    "comma-dangle": ["error", "ignore"],
-    "indent": ["error", 2],
-    "no-console": "off"
+    "comma-dangle": ["error", "always"],
+    "indent": ["error", 2]
   }
 }

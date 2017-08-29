@@ -1,0 +1,64 @@
+{
+  "all": {
+    "optimize" : false,
+    "relax"    : false,
+    "doc"      : false
+  },
+  "css" : {
+    "src-dir"     : "./src/css",
+    "dest-dir"    : "./build/css",
+    "engine"      : "sass",
+    "postcss"     : {
+      "autoprefixer": {
+        "browsers": ["> 4%", "ie >= 8"]
+      }
+    }
+  },
+  "html" : {
+    "src-dir"  : "./src/html",
+    "dest-dir" : "./build",
+    "data-dir" : "./src/data",
+    "engine"   : "twig",
+    "a11y"     : {
+      "viewports": ["320x480","768x1024","1024x768","1920x1080"],
+      "delay"    : 1
+    }
+  },
+  "js" : {
+    "src-dir"  : "./src/js",
+    "dest-dir" : "./build/js",
+    "engine"   : "webpack",
+    "config"   : "webpack-config.js"
+  },
+  "images": {
+    "src-dir"  : "./src/assets/img",
+    "dest-dir" : "./build/img"
+  },
+  "svg": {
+    "src-dir"  : "./src/assets/svg/symbols",
+    "dest-dir" : "./src/assets/svg",
+    "id-prefix": "symbol",
+    "dest-file": "symbols"
+  },
+  "assets": {
+    "src-dir"  : "./src/assets",
+    "dest-dir" : "./build"
+  },
+  "connect": {
+    "port"     : 8000,
+    "open"     : false,
+    "directory": false,
+    "baseDir"  : "./build"
+  },
+  "sftp-deploy": {
+    "host"     : "host",
+    "port"     : 22,
+    "auth"     : "key1",
+    "src-dir"  : "./build",
+    "dest-dir" : "/home/integration/www/<my-project>/%pkg.name%_%pkg.version%"
+  },
+  "doc": {
+    "src-dir"  : "./docs",
+    "dest-dir" : "./build/doc"
+  }
+}
