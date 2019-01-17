@@ -1,6 +1,6 @@
 # ENVIRONNEMENT GLOBAL
 # -----------------------------------------------------------------------------
-# Pour être sur que le fichier .gitignore n'est jamais ignorer lui-même.
+# Pour être sûr que le fichier .gitignore n'est jamais ignoré lui-même.
 !.gitignore
 
 # SASS
@@ -8,11 +8,11 @@
 # Ignorer le cache de Sass/Compass
 .sass-cache
 
-# Ignorer la configuration interne de Bunler
+# Ignorer la configuration interne de Bundler
 .bundle
 
-# Ignorer les gems instalées avec le projet
-# N'hésitez pas à adpater le nom du dossier à vos propre habitudes
+# Ignorer les gems installées avec le projet
+# N'hésitez pas à adapter le nom du dossier à vos propres habitudes
 .gems
 
 
@@ -24,7 +24,7 @@ logs
 *.log
 npm-debug.log*
 
-# Ignorer les biblothèques et fichiers temporaires gérés via JSPM
+# Ignorer les bibliothèques et fichiers temporaires gérés via JSPM
 jspm_packages
 
 # Ignorer le cache nproxy
@@ -37,10 +37,10 @@ nproxy-cache
 
 # PROJET
 # -----------------------------------------------------------------------------
-# Ignorer les bibliothèques JS tiers placées dans les sources
+# Ignorer les bibliothèques JS tierces placées dans les sources
 # src/js/lib
 
-# Ignorer les bibliothèques Sass tiers placées dans les sources
+# Ignorer les bibliothèques Sass tierces placées dans les sources
 # src/sass/lib
 
 # Ignorer le build

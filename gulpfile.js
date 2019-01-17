@@ -1,4 +1,4 @@
-// Toutes les taches sont externalisées pour permettre une flexibilité et une
+// Toutes les tâches sont externalisées pour permettre une flexibilité et une
 // configurabilité maximum.
 
 // Les deux taches les plus utiles sont :
