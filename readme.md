@@ -74,7 +74,7 @@ Voir les instructions de configuration ci-après :
 
 ### Finalisation
 
-Une fois les étapes précédantes executées, vous n’êtes déjà plus sur le GSK mais dans votre nouveau projet.
+Une fois les étapes précédentes exécutées, vous n’êtes déjà plus sur le GSK mais dans votre nouveau projet.
 
 1. Remplacez votre `readme.md` par le `readme.dist.md`.
 2. Dans celui-ci, remplacez `PROJECT_NAME` par le nom de votre projet et `GIT_REPO_URL` par l’url de son dépôt git.
