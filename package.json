@@ -56,7 +56,7 @@
     "gulp-data": "1.2.1",
     "gulp-dox": "0.1.6",
     "gulp-eslint": "3.0.1",
-    "gulp-hb": "6.0.2",
+    "gulp-hb": "8.0.0",
     "gulp-hbs": "0.2.0",
     "gulp-help": "1.6.1",
     "gulp-lesshint": "3.0.0",
