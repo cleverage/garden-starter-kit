@@ -32,7 +32,7 @@
     "gulp-sourcemaps": "2.6.0",
     "gulp-stylus": "2.6.0",
     "gulp-svgstore": "6.1.0",
-    "gulp-uglify": "2.1.2",
+    "gulp-uglify": "3.0.2",
     "gulp-util": "3.0.8",
     "jquery": "3.4.1",
     "lazypipe": "1.0.1",
