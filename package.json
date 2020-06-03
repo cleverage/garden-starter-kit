@@ -51,7 +51,7 @@
   },
   "devDependencies": {
     "browser-sync": "2.18.8",
-    "eslint": "3.19.0",
+    "eslint": "7.1.0",
     "gulp-a11y": "0.1.2",
     "gulp-data": "1.2.1",
     "gulp-dox": "0.1.6",
