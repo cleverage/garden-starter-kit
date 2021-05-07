@@ -42,7 +42,7 @@
     "require-dir": "1.0.0",
     "run-sequence": "1.2.2",
     "slick-carousel": "1.6.0",
-    "underscore": "1.8.3",
+    "underscore": "1.13.1",
     "vinyl-buffer": "1.0.0",
     "vinyl-source-stream": "1.1.0",
     "webpack": "3.0.0",
